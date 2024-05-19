@@ -24,6 +24,7 @@
             position: fixed;
             top: 0;
             left: 0;
+            z-index: 1;
         }
         nav a {
             color: #fff;
@@ -41,9 +42,65 @@
             align-items: center;
             justify-content: center;
         }
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 2;
+        }
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        #menu-btn {
+            font-size: 30px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: white;
+            z-index: 3;
+        }
+        footer {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
+    <div id="menu-btn" onclick="openNav()">&#9776;</div>
+    <div id="mySidenav" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </div>
     <nav>
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
@@ -52,5 +109,17 @@
     <div class="profile-pic">
         <!-- Placeholder for profile picture -->
     </div>
+    <footer>
+        <p>&copy; 2024 Sanatan Data Science Portfolio</p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
