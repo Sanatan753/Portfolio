@@ -83,3 +83,41 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    margin-right: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #1a1a2e;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    cursor: pointer;
+    margin-top: 40px;
+}
