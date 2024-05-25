@@ -1,4 +1,4 @@
-body {
+.background_index {
         margin: 0;
         font-family: Arial, sans-serif;
         background-color: #000;
@@ -14,8 +14,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -97,21 +95,25 @@ footer {
 
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .item {
     display: flex;
+    flex-direction:row;
     margin-bottom: 20px;
     cursor: pointer;
 }
 
 .thumbnail {
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    height: 30%;
     background-color: #ccc;
     margin-right: 20px;
 }
