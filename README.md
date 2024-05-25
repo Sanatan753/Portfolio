@@ -7,7 +7,7 @@ THis readme file gonna include my summary of projects that i have worked on
 
 ## StudentPerformanceAnayslsis
  RavenshawUnivesisty
- • Developing aweb‑basedsystemtoanalyzestudent performance data.
+ • Developing a web‑basedsystem to analyze student performance data.
  • Implementeddatavisualization tools to track academic progress.
  • Technical Skills: Python, Django, MySQL, Java
  • SoftSkills: FeedbackAnalysis, Group Working, Leadership Skills
