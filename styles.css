@@ -83,15 +83,6 @@ nav a {
     color: white;
     z-index: 3;
 }
-footer {
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-}
 
 .container {
     text-align: center;
@@ -136,4 +127,48 @@ h1 {
     position: absolute;
     top:70px;
     right: 100px;
+}
+/* label styles */
+.label {
+    position: absolute;
+    background-color: #535353;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: white solid 5px;
+    font-size: 12px;
+}
+
+.top-left {
+    top: 90;
+    left: 100;
+    transform: translate(-50%, -50%);
+}
+
+.top-right {
+    top: 60;
+    right: 100;
+    transform: translate(50%, -50%);
+}
+
+.bottom-left {
+    bottom: 80;
+    left: 100;
+    transform: translate(-50%, 50%);
+}
+
+.bottom-right {
+    bottom: 80;
+    right: 100;
+    transform: translate(50%, 50%);
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
 }
