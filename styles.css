@@ -165,17 +165,26 @@ h1 {
     color: #fff;
     padding: 5px 10px;
     border-radius: white solid 5px;
-    font-size: 12px;
+    font-size: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: 0.3s;
+}
+.label a{
+    text-decoration:none;
+    color: white;
 }
 .label:hover{
+    border-radius: 10%;
     transform: scale(1.1);
-    background-color: #e0e0e0;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+    
 }
 
 .top-left {
     top: 300px;
-    left: 500px;
+    left: 550px;
     transform: translate(-50%, -50%);
 }
 
@@ -187,7 +196,7 @@ h1 {
 
 .bottom-left {
     bottom: 300px;
-    left: 500px;
+    left: 550px;
     transform: translate(-50%, 50%);
 }
 
