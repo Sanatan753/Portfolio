@@ -36,15 +36,22 @@ nav a {
     margin: 0 1rem;
     font-size: 1.2rem;
 }
-.profile-pic {
+.profile_pic {
     margin-top: 80px; /* to account for the fixed navbar */
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px ;
     background-color: #ccc;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.profile-pic-container{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width:100px;
+    border-radius: 50% 50%;
 }
 .sidebar {
     height: 100%;
@@ -246,6 +253,76 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
+
+/* styles.css */
+
+.background_project {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.project-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.image-box {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    max-width: 40%;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+    max-width: 40%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* Footer styles */
 footer {
