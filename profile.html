@@ -19,7 +19,14 @@
 </style>
 </head>
 <body>
-
+  <div id="menu-btn" onclick="openNav()">&#9776;</div>
+  <div id="mySidenav" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Projects</a>
+      <a href="profile.html">About Me</a>
+      <a href="#contact">Contact</a>
+  </div>
 <div class="profile-container">
   <div class="profile-header">
     <h1>Sanatan Kisku</h1>
@@ -49,6 +56,14 @@
     </div>
   </div>
 </div>
+<script>
+  function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
 
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
 </body>
 </html>
