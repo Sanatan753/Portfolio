@@ -206,26 +206,26 @@ h1 {
 }
 
 .top-left {
-    top: 300px;
-    left: 550px;
+    top: 40%;
+    left: 36%;
     transform: translate(-50%, -50%);
 }
 
 .top-right {
-    top: 300px;
-    right: 500px;
+    top: 40%;
+    right: 36%;
     transform: translate(50%, -50%);
 }
 
 .bottom-left {
-    bottom: 300px;
-    left: 550px;
+    bottom: 36%;
+    left: 36%;
     transform: translate(-50%, 50%);
 }
 
 .bottom-right {
-    bottom: 300px;
-    right: 500px;
+    bottom: 36%;
+    right: 36%;
     transform: translate(50%, 50%);
 }
 
