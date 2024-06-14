@@ -247,6 +247,31 @@ h1 {
     right: 37%;
     transform: translate(50%, 50%);
 }
+@media(max-width:600px){
+    .top-left {
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .top-right {
+        top: 30%;
+        right: 30%;
+        transform: translate(50%, -50%);
+    }
+
+    .bottom-left {
+        bottom: 25%;
+        left: 30%;
+        transform: translate(-50%, 50%);
+    }
+    
+    .bottom-right {
+        bottom: 25%;
+        right: 30%;
+        transform: translate(50%, 50%);
+    }
+}
 
 .profile-container {
     background-color: #fff;
