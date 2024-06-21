@@ -10,7 +10,7 @@ with open('linear_regression_model.pkl', 'rb') as f:
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('Home.ejs')
 
 @app.route('/predict', methods=['POST'])
 def predict():
