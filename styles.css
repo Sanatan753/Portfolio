@@ -332,7 +332,15 @@ h1 {
 
 /* styles.css */
 
-.background_project {
+.background_project1 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.background_project2 {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
