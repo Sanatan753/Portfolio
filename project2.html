@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Regression Model</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        alert("This section is under development")
-        alert("Why are you even here ?")
-    </script>
 </head>
 <body class="background_project2">
     <a href="portfolio.html" class="button_back_to_home">Back to Projects</a>
@@ -17,12 +13,12 @@
     </div>
     <div class="project-container">
         <div class="article">
-        <form action="/predict" method="post">
-        <label>Input Age Of your Property </label>
-        <input type="text" name="feature1">
-        <input type="submit" value="Predict">
-        </form>
-        <div id="output">{{ prediction_text }}</div>
+            <form id="myForm" action="/submit" method="POST">
+                <input type="text" name="Age" placeholder="Age of the Property">
+                <button type="submit">Submit</button>
+              </form>
+              
+              <div id="submittedData" class="project-container"></div>
         </div>
     </div>
  <script src="script.js"></script>
