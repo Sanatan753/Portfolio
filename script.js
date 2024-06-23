@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("myForm");
+    const box = document.getElementById("submittedData")
     const submittedDataDiv = document.getElementById("submittedData");
-  
+
     form.addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the default form submission
   
