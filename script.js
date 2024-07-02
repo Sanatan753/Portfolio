@@ -1,3 +1,18 @@
+let touchStartY = 0;
+let touchEndY = 0;
+
+document.querySelector('.background_index').addEventListener('touchstart', (e) => {
+    touchStartY = e.changedTouches[0].screenY;
+});
+
+document.querySelector('.background_index').addEventListener('touchend', (e) => {
+    touchEndY = e.changedTouches[0].screenY;
+    if (touchEndY > touchStartY + 50) { // If the user swipes down more than 50 pixels
+        location.reload();
+    }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("myForm");
     const box = document.getElementById("submittedData")
