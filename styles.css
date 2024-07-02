@@ -57,6 +57,13 @@
 #home_footer{
     position: fixed;
 }
+
+.logo_home{
+    height:22px;
+    width:22px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
 nav {
     width: 100%;
     background-color: #000;
@@ -238,10 +245,10 @@ h1 {
 .label {
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    background-color: #535353;
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 5px 10px;
-    border-radius: white solid 5px;
+    border-radius: 5%;
     font-size: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     transition: 0.3s;
@@ -257,7 +264,7 @@ h1 {
     color: white;
     background-color: #000000;
     cursor: pointer;
-    
+
 }
 
 .top-left {
