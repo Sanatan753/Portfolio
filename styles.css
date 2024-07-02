@@ -155,6 +155,17 @@ nav a {
     grid-template-columns: auto;
     margin-left: 20px;
     }
+    .background_index{
+        background-size: 326%;
+    }
+    @keyframes back_animation {
+        from{
+            background-size:350%;
+        }
+        to{
+            background-size: 326%;
+        }
+    }
 }
 h1 {
     margin-bottom: 40px;
@@ -292,26 +303,26 @@ h1 {
 }
 @media(max-width:600px){
     .top-left {
-        top: 30%;
-        left: 30%;
+        top: 20%;
+        left: 15%;
         transform: translate(-50%, -50%);
     }
     
     .top-right {
-        top: 30%;
-        right: 30%;
+        top: 20%;
+        right: 15%;
         transform: translate(50%, -50%);
     }
 
     .bottom-left {
-        bottom: 25%;
-        left: 30%;
+        bottom: -5%;
+        left: 15%;
         transform: translate(-50%, 50%);
     }
     
     .bottom-right {
-        bottom: 25%;
-        right: 30%;
+        bottom: -5%;
+        right: 15%;
         transform: translate(50%, 50%);
     }
 }
