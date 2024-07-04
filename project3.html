@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="background_project1">
+    <a href="portfolio.html" class="button_back_to_home">Back to Projects</a>
+    <div class="container">
+        <h2>Univariate Time Series</h2>
+    </div>
+    <div class="project-container">
+        <div class="article">
+            <h3>Project Title: Univariate time series</h3>
+            <p>This code performs time series forecasting using a
+                Linear Regression model. It consists of data normalization,
+                pattern extraction, model training, forecasting, and evaluation of the
+                model's performance using RMSE and MAE metrics.</p>
+            <h4>Purpose</h4>
+            <p>
+                The code aims to forecast future values of a time series dataset using a linear regression model.
+                It involves several steps including data preprocessing (normalization), pattern extraction, model
+                training, forecasting, and evaluation.
+            </p>
+            <h4>Import Required Packages</h4>
+            <div class="Code">
+                <ul>
+                    <li><span class="function">import</span> numpy as np</li>
+                    <li><span class="function">import</span> pandas as pd</li>
+                    <li><span class="function">from</span> sklearn.neural_network import MLPRegressor</li>
+                    <li><span class="function">from</span> sklearn.linear_model import LinearRegression</li>
+                    <li><span class="function">import</span> os</li>
+                    <li><span class="function">import</span> warnings</li>
+                    <li><span class="function">import</span> matplotlib.pyplot as plt </li>
+                    <li><span class="function">import</span> seaborn as sns</li>
+                    <li><span class="function">warnings</span>.filterwarnings("ignore")</li>
+                </ul></div>
+            <p><h4>Functions</h4>
+                <ol>
+                    <li><strong>get_Patterns</strong></li>
+                    This function extracts patterns from the time series data using a sliding window approach.
+                
+                Parameters:
+                
+                TSeries: The time series data.
+                n_inputs: Number of lagged observations to consider.
+                h: The horizon for the prediction.
+                Returns:
+                
+                X: Input patterns.
+                y: Corresponding outputs.
+                <li><strong>minmaxNorm</strong></li>
+                This function normalizes the data using Min-Max normalization.
+                
+                Parameters:
+                
+                originalData: The original time series data.
+                lenTrainValidation: Length of the training and validation set.
+                Returns:
+                
+                normalizedData: The normalized data.
+                <li><strong>minmaxDeNorm</strong></li>
+                This function denormalizes the forecasted data back to its original scale.
+                
+                Parameters:
+                
+                originalData: The original time series data.
+                forecastedData: The forecasted data.
+                lenTrainValidation: Length of the training and validation set.
+                Returns:
+                
+                denormalizedData: The denormalized data.
+                <li><strong>findRMSE</strong></li>
+                This function calculates the Root Mean Square Error (RMSE) for training and testing sets.
+                
+                Parameters:
+                
+                Timeseries_Data: The original time series data.
+                forecasted_value: The forecasted values.
+                lenTrainValidation: Length of the training and validation set.
+                Returns:
+                
+                trainRMSE: RMSE for the training and validation set.
+                testRMSE: RMSE for the test set.
+                <li><strong>findMAE</strong></li>
+                This function calculates the Mean Absolute Error (MAE) for training and testing sets.
+                
+                Parameters:
+                
+                Timeseries_Data: The original time series data.
+                forecasted_value: The forecasted values.
+                lenTrainValidation: Length of the training and validation set.
+                Returns:
+                
+                trainMAE: MAE for the training and validation set.
+                testMAE: MAE for the test set.
+                <li><strong>Find_Fitness</strong></li>
+                This function trains the model and makes predictions.
+                
+                Parameters:
+                
+                x: Input patterns.
+                y: Corresponding outputs.
+                lenValid: Length of the validation set.
+                lenTest: Length of the test set.
+                model: The machine learning model to be used.
+                Returns:
+                
+                yhatNorm: Normalized predictions.
+                </ol>
+            </p>
+            <p><div class="flowchart">
+                <div class="step">
+                  <h3>Data Loading</h3>
+                  <p>Reads a time series dataset (Lynx.csv).</p>
+                </div>
+                <div class="step">
+                  <h3>Normalization</h3>
+                  <p>Normalizes the data using minmaxNorm.</p>
+                </div>
+                <div class="step">
+                  <h3>Pattern Extraction</h3>
+                  <p>Converts the time series into input (X) and output (y) patterns using get_Patterns.</p>
+                </div>
+                <div class="step">
+                  <h3>Model Training and Evaluation</h3>
+                  <p>
+                    Uses a LinearRegression model.<br>
+                    Iteratively trains the model, forecasts future values,<br>
+                    evaluates performance using RMSE and MAE.<br>
+                    Stores accuracy metrics (Accuracy) and forecasted values (Forecasts)<br>
+                    in Excel files (LinearRegression_Accuracy.xlsx and LinearRegression_Forecasts.xlsx).
+                  </p>
+                </div>
+              </div></p>
+            <div class="image-box float-right">
+                <img src="images/project1-003.png" alt="Description of image 3">
+            </div>
+            <p>Project Objectives:
+                The Online Exam Management System aims to enhance the efficiency and<br>
+                effectiveness of university management by reducing manual effort, improving<br>
+                communication between students and administrators, and streamlining administrative<br>
+                processes. Ultimately, this project is designed to create a more organized and supportive<br>
+                academic environment, benefiting both students and university staff.</p>
+        </div>
+    </div>
+</body>
+</html>
