@@ -470,6 +470,82 @@ p {
     clear: both;
 }
 
+.Code {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace; /* Example font */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Optional: adds space between boxes */
+}
+
+.Code ul {
+    list-style-type: disc; /* or any other list style you prefer */
+    padding-left: 20px;
+    margin-top: 0; /* Reset default margin for ul */
+    margin-bottom: 10px; /* Optional: adds space between ul and text */
+}
+
+.Code ul li {
+    margin-bottom: 5px; /* Optional: adds space between list items */
+}
+
+.Code .function {
+    color: #4CAF50; /* Example green color for functions */
+}
+
+.Code .keyword {
+    color: #FF9800; /* Example orange color for keywords */
+}
+
+.Code .comment {
+    color: #9E9E9E; /* Example gray color for comments */
+}
+
+.Code .string {
+    color: #FFEB3B; /* Example yellow color for strings */
+}
+
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Center the flowchart */
+  .flowchart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .step {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  .step p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.4;
+  }
+  
 /* Footer styles */
 footer {
     width: 100%;
