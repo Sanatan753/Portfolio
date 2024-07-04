@@ -12,6 +12,9 @@ document.querySelector('.background_index').addEventListener('touchend', (e) => 
     }
 });
 
+function openPage(url) {
+  window.location.href = url;
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("myForm");
