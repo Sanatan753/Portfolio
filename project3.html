@@ -26,45 +26,35 @@
             </p>
             <h4>Import Required Packages</h4>
             <div class="Code">
-                <ul>
-                    <li><span class="function">import</span> numpy as np</li>
-                    <li><span class="function">import</span> pandas as pd</li>
-                    <li><span class="function">from</span> sklearn.neural_network import MLPRegressor</li>
-                    <li><span class="function">from</span> sklearn.linear_model import LinearRegression</li>
-                    <li><span class="function">import</span> os</li>
-                    <li><span class="function">import</span> warnings</li>
-                    <li><span class="function">import</span> matplotlib.pyplot as plt </li>
-                    <li><span class="function">import</span> seaborn as sns</li>
-                    <li><span class="function">warnings</span>.filterwarnings("ignore")</li>
-                </ul></div>
+                <img src="images/project3-001.png" alt="Your PC sucks">
+            </div>
             <p><h4>Functions</h4>
-                <ol>
-                    <li><strong>get_Patterns</strong></li>
-                    This function extracts patterns from the time series data using a sliding window approach.
-                
-                Parameters:
+                <img src="images/project3-002.png" alt="Your pc Might not sucks" class="Code">
+                This function extracts patterns from the time series data using a sliding window approach.<br>
+                <strong>Parameters:</strong>
                 
                 TSeries: The time series data.
                 n_inputs: Number of lagged observations to consider.
-                h: The horizon for the prediction.
-                Returns:
-                
+                h: The horizon for the prediction.<br>
+                <strong>Returns:</strong> 
                 X: Input patterns.
                 y: Corresponding outputs.
+
                 <li><strong>minmaxNorm</strong></li>
-                This function normalizes the data using Min-Max normalization.
+                <img src="images/project3-003.png" alt="minmaxNorm_code" class="Code">
+                This function normalizes the data using Min-Max normalization.<br>
                 
-                Parameters:
+                <strong>Parameters:</strong>
                 
                 originalData: The original time series data.
-                lenTrainValidation: Length of the training and validation set.
-                Returns:
-                
+                lenTrainValidation: Length of the training and validation set.<br>
+                <strong>Returns:</strong>
                 normalizedData: The normalized data.
-                <li><strong>minmaxDeNorm</strong></li>
-                This function denormalizes the forecasted data back to its original scale.
                 
-                Parameters:
+                <li><strong>minmaxDeNorm</strong></li>
+                This function denormalizes the forecasted data back to its original scale.<br>
+                
+                <strong>Parameters:</strong>
                 
                 originalData: The original time series data.
                 forecastedData: The forecasted data.
