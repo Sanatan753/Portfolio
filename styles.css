@@ -469,43 +469,12 @@ p {
     display: table;
     clear: both;
 }
-
-.Code {
-    background-color: black;
-    color: white;
-    font-family: 'Courier New', Courier, monospace; /* Example font */
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 15px; /* Optional: adds space between boxes */
+.Code{
+    max-width:100%;
+    height: auto;
+    border: solid 2px black;
+    border-radius: 1%;
 }
-
-.Code ul {
-    list-style-type: disc; /* or any other list style you prefer */
-    padding-left: 20px;
-    margin-top: 0; /* Reset default margin for ul */
-    margin-bottom: 10px; /* Optional: adds space between ul and text */
-}
-
-.Code ul li {
-    margin-bottom: 5px; /* Optional: adds space between list items */
-}
-
-.Code .function {
-    color: #4CAF50; /* Example green color for functions */
-}
-
-.Code .keyword {
-    color: #FF9800; /* Example orange color for keywords */
-}
-
-.Code .comment {
-    color: #9E9E9E; /* Example gray color for comments */
-}
-
-.Code .string {
-    color: #FFEB3B; /* Example yellow color for strings */
-}
-
 /* Reset basic styles */
 * {
     margin: 0;
