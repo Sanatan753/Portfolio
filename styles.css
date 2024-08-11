@@ -382,17 +382,20 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    cursor: pointer; /* Make it clear the images are clickable */
   }
+  
   .profile-certificates img:hover {
-    position: relative;
-    height:200px;
+    height: 200px;
     transition: 0.75s ease-in-out;
     z-index: 10;
   }
+  
   .profile-certificates img::after {
     transition: 0.75s ease-in-out;
     z-index: 10;
   }
+  
 /* styles.css */
 
 .background_project1 {
