@@ -386,14 +386,30 @@ h1 {
   }
   
   .profile-certificates img:hover {
-    height: 200px;
+    height: 105px;
     transition: 0.75s ease-in-out;
     z-index: 10;
   }
+
+  .typing-animation {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 20ch; /* Adjust the width to fit the text */
+    animation: typing 2s steps(20) 0.5s 1 normal both, blink 500ms steps(20) infinite;
+  }
   
-  .profile-certificates img::after {
-    transition: 0.75s ease-in-out;
-    z-index: 10;
+  @keyframes typing {
+    from { width:0; }
+    to { width: 24ch; }
+}
+  
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
   }
   
 /* styles.css */
