@@ -25,8 +25,10 @@
         animation-name: center_animation ;
         animation-duration: 1.5s;
         position: relative;
-        top:-25px
     }
+.center {
+      border-radius: 50%;
+}
 @keyframes back_animation {
     from{
         background-size: 110%;
@@ -37,10 +39,10 @@
 }
 @keyframes center_animation {
     from{
-        top:50px;
+        top:100px;
     }
     to{
-        top:-25px;
+        top:0px;
     }}
 .background_Portfolio{
     background-image: url('images/background-portfolio.jpg');
@@ -69,6 +71,58 @@
     padding-top: 5px;
     padding-right: 5px;
 }
+.orbit {
+  border-radius: 50%;
+  position: absolute;
+}
+.orbit1 {
+  animation: revolve1 20s linear infinite;
+}
+
+.orbit2 {
+  animation: revolve2 20s linear infinite;
+}
+
+.orbit3 {
+  animation: revolve3 20s linear infinite;
+}
+
+.orbit4 {
+  animation: revolve4 20s linear infinite;
+}
+
+@keyframes revolve1 {
+  0% {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@keyframes revolve2 {
+    0% {
+      transform: rotate(90deg) translateX(200px) rotate(-90deg);
+    }
+    100% {
+      transform: rotate(450deg) translateX(200px) rotate(-450deg);
+    }
+}
+@keyframes revolve3 {
+  0% {
+    transform: rotate(180deg) translateX(200px) rotate(-180deg);
+  }
+  100% {
+    transform: rotate(540deg) translateX(200px) rotate(-540deg);
+  }
+}
+@keyframes revolve4 {
+  0% {
+    transform: rotate(270deg) translateX(200px) rotate(-270deg);
+  }
+  100% {
+    transform: rotate(630deg) translateX(200px) rotate(-630deg);
+  }
+}
 nav {
     width: 100%;
     background-color: #000;
@@ -86,14 +140,12 @@ nav a {
     font-size: 1.2rem;
 }
 .profile_pic {
-    margin-top: 80px; /* to account for the fixed navbar */
     max-width: 200px;
     max-height: 200px ;
     background-color:rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     border:solid white 5px ;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .profile-pic-container{
@@ -279,9 +331,10 @@ h1 {
 }
 
 .button_back_to_home {
-    position: relative;
+    position: absolute;
     top:10px;
     display: inline-block;
+    max-width: 147px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 700;
@@ -324,15 +377,13 @@ h1 {
 }
 
 .top-left {
-    top: 20%;
-    left: -50%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 40%;
 }
 
 .top-right {
-    top: 20%;
-    right: -50%;
-    transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%;
 }
 
 .bottom-left {
@@ -543,8 +594,6 @@ p {
 }
 /* Reset basic styles */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   
