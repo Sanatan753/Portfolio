@@ -9,116 +9,117 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         /* styles.css */
-.button_back_to_home {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: #444444;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-}
+        .button_back_to_home {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px;
+            background-color: #444444;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
+        h1 {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
 
 
-.reading-section h3 {
-    margin: 0;
-    font-size: 20px;
-}
+        .reading-section h3 {
+            margin: 0;
+            font-size: 20px;
+        }
 
-.reading-section p {
-    font-size: 16px;
-}
+        .reading-section p {
+            font-size: 16px;
+        }
 
-.status-window {
-    background-color: #eeeeee;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 14px;
-}
+        .status-window {
+            background-color: #eeeeee;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 14px;
+        }
 
-.circle.profile-pic-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-}
+        .circle.profile-pic-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
 
-.circle.profile-pic-container img.profile-pic-container {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* Media query for screens less than 540px */
-@media (max-width: 540px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+        .circle.profile-pic-container img.profile-pic-container {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Media query for screens less than 540px */
+        @media (max-width: 540px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .item {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+            .item {
+                width: 90%;
+                margin-bottom: 20px;
+            }
 
-    .circle.profile-pic-container {
-        display: none;
-    }
+            .circle.profile-pic-container {
+                display: none;
+            }
 
-    .button_back_to_home {
-        margin: 10px;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+            .button_back_to_home {
+                margin: 10px;
+                padding: 8px 16px;
+                font-size: 14px;
+            }
 
-    h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
 
-    .description {
-        padding: 8px;
-    }
+            .description {
+                padding: 8px;
+            }
 
-    .reading-section h3 {
-        font-size: 16px;
-    }
+            .reading-section h3 {
+                font-size: 16px;
+            }
 
-    .reading-section p {
-        font-size: 12px;
-    }
+            .reading-section p {
+                font-size: 12px;
+            }
 
-    .status-window {
-        font-size: 12px;
-        padding: 4px;
-    }
-}
-.animate__backInDown {
-  margin: 0 0.5rem;
+            .status-window {
+                font-size: 12px;
+                padding: 4px;
+            }
+        }
+        .animate__backInDown {
+        margin: 0 0.5rem;
 
-  animation: backInDown; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
-.animate__backInLeft {
-  margin: 0 0.5rem;
+        animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        }
+        .animate__backInLeft {
+        margin: 0 0.5rem;
 
-  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
-.animate__backInRight {
-  margin: 0 0.5rem;
+        animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        }
+        .animate__backInRight {
+        margin: 0 0.5rem;
 
-  animation: backInRight; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
+        animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        }
 
 
     </style>
@@ -127,22 +128,22 @@ h1 {
     <a href="index.html" class="button_back_to_home">Back to Home</a>
     <h1>Projects</h1>
     <div class="container-portfolio">
-        <div class="projects_item item-portfolio animate__animated animate__backInLeft" id="project1" onclick="openPage('project1.html')">
+        <div class="item-portfolio animate__animated animate__backInLeft" id="project1" onclick="openPage('project1.html')">
             <img src="images/project1.png" alt="Project 1 Thumbnail" class="thumbnail">
             <div class="description">
                 <div class="reading-section">
                     <h3>Online Exam Management System</h3>
                     <p>This project enhances organization and support in the academic environment,
                         benefiting students and staff by streamlining processes and improving access
-                        to resources, fostering efficiency and collaboration.
-                    </p>
+                        to resources, fostering efficiency and collaboration.</p>
+                    
                 </div>
             </div>
             <div class="status-window">
                 <span>Status: Completed</span>
             </div>
         </div> <!-- Closing div for project1 -->
-        <div class="projects_item item-portfolio animate__animated animate__backInDown" id="project2" onclick="openPage('project2.html')">
+        <div class=" item-portfolio animate__animated animate__backInDown" id="project2" onclick="openPage('project2.html')">
             <img src="images/project2.png" alt="Project 2 Thumbnail" class="thumbnail">
             <div class="description">
                 <div class="reading-section">
@@ -156,7 +157,7 @@ h1 {
                 <span>Status: Under Evaluation </span>
             </div>
         </div> <!-- Closing div for project2 -->
-        <div class="projects_item item-portfolio animate__animated animate__backInRight" id="project3" onclick="openPage('project3.html')">
+        <div class="item-portfolio animate__animated animate__backInRight" id="project3" onclick="openPage('project3.html')">
             <img src="images/project3.png" alt="Project 3 Thumbnail" class="thumbnail">
             <div class="description">
                 <div class="reading-section">
