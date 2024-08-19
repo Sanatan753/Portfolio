@@ -51,7 +51,7 @@
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgba(0,0,0, 0.1);
+    background-color: rgba(0,0,0,1);
     color: #fff;
     align-items: center;
     justify-content: center;
@@ -272,7 +272,7 @@ h1 {
     grid-auto-flow: row;
     margin-bottom: 20px;
     cursor: pointer;
-    width: 94%;
+    width: 90%;
     }
 }
 
@@ -286,16 +286,13 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    color: white;
-    background-color: #000000;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
     border: 1px solid #ccc;
     margin-left: 5px;
     margin-right: 5px;
 }
-.description:hover{
-    size: 115%;
-    transition: 1s smooth;
-}
+
 .reading-section {
     margin-top: 10px;
     margin-right: 5px;
@@ -307,16 +304,15 @@ h1 {
 
 .status-window {
     position: relative;
-    bottom: 0%;
-    height:60px;
+    padding-top: 10px;
+    height:40px;
     width: 100%;
-    font-size: 18px;
+    font-size: 14px;
     color:black;
     align-items: center;
     border-top: 1px solid #ccc;
     background-color: #f9f9f9;
 }
-
 .circle {
     width: 100px;
     height: 100px;
