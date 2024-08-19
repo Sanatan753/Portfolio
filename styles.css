@@ -313,6 +313,16 @@ h1 {
     border-top: 1px solid #ccc;
     background-color: #f9f9f9;
 }
+.Not-complete:hover{
+  color: rgb(247, 134, 134);
+  font-size: 15px;
+  transition: 1s smooth;
+}
+.complete:hover{
+  color: rgb(146, 246, 150);
+  font-size: 15px;
+  transition: 1s smooth;
+}
 .circle {
     width: 100px;
     height: 100px;
