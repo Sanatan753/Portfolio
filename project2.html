@@ -10,17 +10,49 @@
 <body class="background_project2">
     <a href="portfolio.html" class="button_back_to_home">Back to Projects</a>
     <div class="container">
-        <h2>Predict using Linear Regression</h2>
+        <h2>House Price Prediction Model</h2>
     </div>
     <div class="project-container">
         <div class="article">
+            <h3>Timeline Summary: House Price Prediction model </h3>
+            <p>
+                <strong>Web Scraping:</strong><br>
+                The project began by scraping housing data from housing.com for Bhubaneswar using Selenium
+                and BeautifulSoup. The script collected key details like price, room size, possession date,
+                and nearby amenities, which were stored in a JSON file for further processing.
+            </p>
+            <p>
+                <strong>Data Cleaning and Preprocessing: </strong><br>
+                The next step involved cleaning the scraped data. This included handling missing values,
+                correcting data types, and transforming categorical variables. Additionally, the 'nearby_places'
+                data was refined to create specific columns indicating the presence of key amenities
+                (e.g., Airport, Hospital) within 5 km.
+            </p>
+            <p>
+                <strong>Feature Engineering: </strong><br>
+                New features were created from the existing data to improve the model's accuracy.
+                For instance, distance-based amenities and room-to-size ratios were derived to provide
+                more insights into the listings.
+            </p>
+            <p>
+                <strong>Model Development: </strong><br>
+                A multiple linear regression model was chosen to predict house prices based on the cleaned and engineered features. The model was trained using the processed data, optimizing parameters to minimize prediction errors.
+            </p>
+            <p>
+                <strong>Model Testing and Evaluation:</strong><br>
+                The model was tested on a separate dataset to evaluate its performance. Key metrics like R-squared and Mean Absolute Error (MAE) were used to assess its accuracy and reliability.
+            </p>
+            <p>
+                <strong>Prediction: </strong><br>
+                Finally, the model was used to predict house prices for new listings, providing a data-driven estimate of property values in Bhubaneswar.
+            </p>
             <form id="myForm" action="/submit" method="POST">
                 <input type="text" name="Age" placeholder="Age of the Property">
                 <button type="submit">Submit</button>
               </form>
-              
-              <div id="submittedData" class="project-container">" "</div>
-        </div>
+              <div id="submittedData" class="project-container"></div>
+            </div>
+        <div class="link-bottom"><img class="logo_home" src="images/github-white.png"><a href="https://github.com/Sanatan753/House_price_prediction">Github link to the project </a></div>
     </div>
  <script src="script.js"></script>
 </body>
