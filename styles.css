@@ -340,7 +340,7 @@ h1 {
     position: absolute;
     top:10px;
     display: inline-block;
-    max-width: 147px;
+    max-width: 175px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 700;
@@ -379,7 +379,6 @@ h1 {
     color: white;
     background-color: #000000;
     cursor: pointer;
-
 }
 
 .top-left {
@@ -428,7 +427,29 @@ h1 {
         transform: translate(50%, 50%);
     }
 }
-
+/* link at the bottom of the pages */
+.link-bottom{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(0, 0, 0);
+    max-width: max-content;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5%;
+    font-size: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: 0.3s;
+}
+.link-bottom a{
+    text-decoration:none;
+    color: white;
+}
+.link-bottom:hover{
+    padding: 10px 20px ;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    background-color: #000000;
+    cursor: pointer;
+}
 .profile-container {
     margin:auto auto ;
     justify-content: center;
@@ -602,9 +623,14 @@ p {
 * {
     box-sizing: border-box;
   }
-  
+  .flowchart-container{
+    display: flex;
+    flex-flow: row;
+  }
   /* Center the flowchart */
   .flowchart {
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
