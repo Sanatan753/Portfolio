@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <link rel="shortcut icon" href="images/favicon.png"type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="background_project1">
+    <a href="portfolio.html" class="button_back_to_home">Back to Projects</a>
+    <div class="container">
+        <h2>Image Classification using CNNs</h2>
+    </div>
+    <div class="project-container">
+        <div class="article">
+            <h3>Project Title: Image Classification Using CNNs</h3>
+            <p>This code performs time series forecasting using a
+                Linear Regression model. It consists of data normalization,
+                pattern extraction, model training, forecasting, and evaluation of the
+                model's performance using RMSE and MAE metrics.</p>
+            <h4>Purpose</h4>
+            <p>
+                The code aims to forecast future values of a time series dataset using a linear regression model.
+                It involves several steps including data preprocessing (normalization), pattern extraction, model
+                training, forecasting, and evaluation.
+            </p>
+            <h4>Import Required Packages</h4>
+            <div class="Code">
+                <img src="images/project3-001.png" alt="Your PC sucks">
+            </div>
+            <p><h4>Functions</h4>
+                <img src="images/project3-002.png" alt="Your pc Might not sucks" class="Code">
+                This function extracts patterns from the time series data using a sliding window approach.<br>
+                <strong>Parameters:</strong>
+                
+                TSeries: The time series data.
+                n_inputs: Number of lagged observations to consider.
+                h: The horizon for the prediction.<br>
+                <strong>Returns:</strong> 
+                X: Input patterns.
+                y: Corresponding outputs.
+
+                <li><strong>minmaxNorm</strong></li>
+                <img src="images/project3-003.png" alt="minmaxNorm_code" class="Code">
+                This function normalizes the data using Min-Max normalization.<br>
+                
+                <strong>Parameters:</strong>
+                
+                originalData: The original time series data.
+                lenTrainValidation: Length of the training and validation set.<br>
+                <strong>Returns:</strong>
+                normalizedData: The normalized data.
+                
+                <li><strong>minmaxDeNorm</strong></li>
+                <img src="images/project3-004.png" alt="minmaxNorm_code" class="Code">
+                This function denormalizes the forecasted data back to its original scale.<br>
+                
+                <strong>Parameters:</strong>
+                
+                originalData: The original time series data.
+                forecastedData: The forecasted data.
+                lenTrainValidation: Length of the training and validation set.
+                Returns:
+                
+                denormalizedData: The denormalized data.
+                <li><strong>findRMSE</strong></li>
+                <img src="images/project3-005.png" alt="minmaxNorm_code" class="Code">
+                This function calculates the Root Mean Square Error (RMSE) for training and testing sets.
+                
+                Parameters:
+                
+                Timeseries_Data: The original time series data.
+                forecasted_value: The forecasted values.
+                lenTrainValidation: Length of the training and validation set.
+                Returns:
+                
+                trainRMSE: RMSE for the training and validation set.
+                testRMSE: RMSE for the test set.
+                <li><strong>findMAE</strong></li>
+                <img src="images/project3-006.png" alt="minmaxNorm_code" class="Code">
+                This function calculates the Mean Absolute Error (MAE) for training and testing sets.
+                
+                Parameters:
+                
+                Timeseries_Data: The original time series data.
+                forecasted_value: The forecasted values.
+                lenTrainValidation: Length of the training and validation set.
+                Returns:
+                
+                trainMAE: MAE for the training and validation set.
+                testMAE: MAE for the test set.
+                <li><strong>Find_Fitness</strong></li>
+                <img src="images/project3-007.png" alt="minmaxNorm_code" class="Code">
+                This function trains the model and makes predictions.<br>
+                
+                <strong>Parameters:</strong><br>
+                
+                <strong>x:</strong> Input patterns.<br>
+                <strong>y:</strong> Corresponding outputs.<br>
+                <strong>lenValid:</strong> Length of the validation set.<br>
+                <strong>lenTest:</strong> Length of the test set.<br>
+                <strong>model:</strong> The machine learning model to be used.<br>
+                <strong>Returns:</strong>
+                <strong>yhatNorm:</strong> Normalized predictions.
+                </ol>
+            </p>
+            <div class="flowchart-container">
+            <div class="flowchart">
+                <div class="step">
+                  <h3>Data Loading</h3>
+                  <p>Reads a time series dataset (Lynx.csv).</p>
+                </div>
+                <div class="step">
+                  <h3>Normalization</h3>
+                  <p>Normalizes the data using minmaxNorm.</p>
+                </div>
+                <div class="step">
+                  <h3>Pattern Extraction</h3>
+                  <p>Converts the time series into input (X) and output (y) patterns using get_Patterns.</p>
+                </div>
+                <div class="step">
+                  <h3>Model Training and Evaluation</h3>
+                  <p>
+                    Uses a LinearRegression model.<br>
+                    Iteratively trains the model, forecasts future values,<br>
+                    evaluates performance using RMSE and MAE.<br>
+                    Stores accuracy metrics (Accuracy) and forecasted values (Forecasts)<br>
+                    in Excel files (LinearRegression_Accuracy.xlsx and LinearRegression_Forecasts.xlsx).
+                  </p>
+                </div>
+            </div>
+            <div class="flowchart">Hello</div>
+            <div class="flowchart">New step</div>
+        </div>
+        <h4>The Main function to Execute the whole Program</h4>
+            <div class="image-box">
+                <img src="images/project3-002.png" alt="Description of image 3">
+            </div>
+            <p> <strong>Project Objectives:</strong><br>
+                The Online Time series anaylis tool helps to visualise and imporove 
+                effectiveness of Understanding the time series by reducing manual effort and
+                Provding insightfull and meaning full statstical values between diffrent values in the data
+                Ultimately, this project is designed to Predict more values in the time series </p>
+        </div>
+        <div class="link-bottom"><img class="logo_home" src="images/github-white.png"><a href="https://github.com/Sanatan753/Time_Series">Github link to the project </a></div>
+    </div>
+</body>
+</html>
