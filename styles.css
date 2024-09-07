@@ -640,6 +640,17 @@ p {
     border: solid 2px black;
     border-radius: 1%;
 }
+.result-top-left{
+  box-sizing: border-box;
+  display: flex;
+  max-width: 49%;
+}
+.result{
+  box-sizing: border-box;
+  max-width: 49%;
+  height: auto;
+  border: solid 2px black;
+}
 /* Reset basic styles */
 * {
     box-sizing: border-box;
