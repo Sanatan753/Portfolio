@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Regression Model</title>
-    <link rel="shortcut icon" href="images/favicon.png"type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="background_project2">
     <a href="portfolio.html" class="button_back_to_home">X</a>
     <div class="container">
@@ -36,24 +38,56 @@
             </p>
             <p>
                 <strong>Model Development: </strong><br>
-                A multiple linear regression model was chosen to predict house prices based on the cleaned and engineered features. The model was trained using the processed data, optimizing parameters to minimize prediction errors.
+                A multiple linear regression model was chosen to predict house prices based on the cleaned and
+                engineered features. The model was trained using the processed data, optimizing parameters to minimize
+                prediction errors.
             </p>
             <p>
                 <strong>Model Testing and Evaluation:</strong><br>
-                The model was tested on a separate dataset to evaluate its performance. Key metrics like R-squared and Mean Absolute Error (MAE) were used to assess its accuracy and reliability.
+                The model was tested on a separate dataset to evaluate its performance. Key metrics like R-squared and
+                Mean Absolute Error (MAE) were used to assess its accuracy and reliability.
             </p>
             <p>
                 <strong>Prediction: </strong><br>
-                Finally, the model was used to predict house prices for new listings, providing a data-driven estimate of property values in Bhubaneswar.
+                Finally, the model was used to predict house prices for new listings, providing a data-driven estimate
+                of property values in Bhubaneswar.
             </p>
             <form id="myForm" action="/submit" method="POST">
                 <input type="text" name="Age" placeholder="Age of the Property">
                 <button type="submit">Submit</button>
-              </form>
-              <div id="submittedData" class="project-container"></div>
-            </div>
-        <div class="link-bottom"><img class="logo_home" src="images/github-white.png"><a href="https://github.com/Sanatan753/House_price_prediction">Github</a></div>
+            </form>
+            <div id="submittedData" class="project-container"></div>
+        </div>
+        <p>
+        <h4>Import Required Packages</h4>
+        <div class="Code"> <img src="images/project2-001.png" alt="Import Required Packages"> </div>
+        </p>
+        <p>
+        <h4>Load and Explore Data</h4> <img src="images/project2-002.png" alt="Load and Explore Data" class="Code"> </p>
+        <p>
+        <h4>Log Transformation</h4> <img src="images/project2-003.png" alt="Log Transformation" class="Code"> Apply a
+        log transformation to the `price_info` column to stabilize variance and normalize the distribution. </p>
+        <p>
+        <h4>Data Visualization</h4> <img src="images/project2-004.png" alt="Data Visualization" class="Code"> Plot
+        histograms for numeric features. </p>
+        <p>
+        <h4>Split Dataset</h4> <img src="images/project2-005.png" alt="Split Dataset" class="Code"> Split the dataset
+        into training and validation sets. </p>
+        <p>
+        <h4>Model Inspection</h4> <img src="images/project2-006.png" alt="Model Inspection" class="Code"> Inspect
+        variable importances from a model (assuming the model `rf` is defined and trained elsewhere in the code). </p>
+        <p>
+        <h4>Test Data Preparation</h4> <img src="images/project2-007.png" alt="Test Data Preparation" class="Code"> Load
+        the test dataset, extract and remove the 'srp' column, and add the `log_price_info` feature. </p>
+        <p>
+        <h4>Feature Importance Visualization</h4> <img src="images/project2-008.png"
+            alt="Feature Importance Visualization" class="Code"> Plot feature importances for the model. </p>
+
+
+        <div class="link-bottom"><img class="logo_home" src="images/github-white.png"><a
+                href="https://github.com/Sanatan753/House_price_prediction">Github</a></div>
     </div>
- <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
