@@ -62,7 +62,9 @@
     position: fixed;
 }
 #home_footer{
-    position: fixed;
+  background-color: rgba(0, 0, 0, 0.1);
+  max-height: max-content;
+  position: fixed;
 }
 
 .logo_home{
@@ -459,6 +461,31 @@ h1 {
     color: rgb(0, 0, 0);
     background-color: #000000;
     cursor: pointer;
+}
+.link-kaggle{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(246, 252, 255);
+  max-width: max-content;
+  color: rgb(115, 243, 255);
+  padding: 5px 10px;
+  border: solid 1px skyblue;
+  border-radius: 5%;
+  font-size: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: 0.3s;
+}
+.link-kaggle a{
+  text-decoration:none;
+  color: white;
+}
+.link-kaggle p{
+  display: inline;
+  color:#20BEFF;
+}
+.link-kaggle:hover{
+  font-size: 22px;
+  background-color: rgb(246, 252, 255);
+  cursor: pointer;
 }
 .profile-container {
     margin:auto auto ;
