@@ -26,6 +26,10 @@
         animation-duration: 1.5s;
         position: relative;
     }
+
+#index-center{
+  cursor: pointer;
+}
 .center {
       border-radius: 50%;
 }
@@ -218,10 +222,24 @@ nav a {
 }
 
 .container {
-    text-align: center;
-    display: grid;
-    grid-template-rows: auto;
-    margin-left: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #283e51, #0a2342); /* Premium gradient background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  max-width: 100vw;
+}
+
+.container h2 {
+  color: #ffffff; /* White text for contrast */
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4); /* Subtle text shadow for premium feel */
+  letter-spacing: 1px;
 }
 
 .container-portfolio {
@@ -628,6 +646,10 @@ h3 {
 
 p {
     margin: 20px 0;
+}
+.Home-result-top{
+  font-family: Arial, sans-serif;
+  flex-direction: column;
 }
 
 .image-box {
