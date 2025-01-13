@@ -522,6 +522,16 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
   }
+@media (max-width:600px){
+  .profile-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-pic-container{
+    margin: auto;
+  }  
+}
 #profile_name{
   padding-right: 10%;
   padding-top: 2%;
@@ -551,6 +561,7 @@ h1 {
   .profile-section p {
     font-size: 16px;
     color: #555;
+    text-wrap: wrap;
     margin: 5px 0;
   }
 
